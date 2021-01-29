@@ -21,7 +21,7 @@ def fetchNews(category):
         newsDictionary['errorMessage'] = str(e.message)
         return newsDictionary
 
-    soup = BeautifulSoup(htmlBody.text, 'lxml')
+    soup = BeautifulSoup(htmlBody.text, 'html.parser')
     newsCards = soup.find_all(class_='news-card')
     if not newsCards:
         newsDictionary['success'] = False
