@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "inshorts.cli"
+name = "inshorts"
 version = "2021.1"
 description = "cli for inshorts"
 authors = ["Sayan Goswami <goswami.sayan47@gmail.com>"]
